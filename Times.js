@@ -17,7 +17,7 @@ function TimeGetter(time) {
         const getNumber = digit.exec(time)[0];
         const calc = (24 * 7) * getNumber;
         return { time: `${calc}:00:00` }
-    } else return "Aucun"
+    } else return { time: null }
 }
 
 const timeInfo = TimeGetter('60m')
